@@ -93,9 +93,9 @@ export default function Team() {
                                 {/* Quote */}
                                 <div className="mb-6">
                                     <div className="relative">
-                                        <div className="absolute -top-2 -left-2 text-4xl text-blue-200">"</div>
+                                        <div className="absolute -top-2 -left-2 text-4xl text-blue-200">&ldquo;</div>
                                         <blockquote className="text-gray-600 italic text-lg leading-relaxed pl-6">{member.quote}</blockquote>
-                                        <div className="absolute -bottom-2 -right-2 text-4xl text-blue-200">"</div>
+                                        <div className="absolute -bottom-2 -right-2 text-4xl text-blue-200">&rdquo;</div>
                                     </div>
                                 </div>
 
