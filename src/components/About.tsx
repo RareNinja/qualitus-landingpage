@@ -73,7 +73,7 @@ export default function About() {
     };
 
     return (
-        <section id="about" className="py-20 bg-gray-50">
+        <section id="about" className="py-20 bg-gray-100">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">{content[language].title}</h2>
@@ -88,12 +88,12 @@ export default function About() {
                         <h4 className="text-2xl font-semibold text-gray-900 mb-4">{language === "pt" ? "Nossa Visão" : "Our Vision"}</h4>
                         <p className="text-gray-600 leading-relaxed">{content[language].vision}</p>
                     </div>
-                    <div className="bg-white rounded-lg shadow-lg p-8">
+                    <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200">
                         <h4 className="text-2xl font-semibold text-gray-900 mb-6">{language === "pt" ? "Nossos Valores" : "Our Values"}</h4>
                         <div className="space-y-4">
                             {content[language].values.map((value, index) => (
                                 <div key={index} className="flex items-start">
-                                    <div className="w-3 h-3 bg-blue-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
+                                    <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full mt-2 mr-4 flex-shrink-0"></div>
                                     <div>
                                         <h5 className="font-semibold text-gray-900 mb-1">{value.title}</h5>
                                         <p className="text-gray-600 text-sm">{value.description}</p>
@@ -108,7 +108,7 @@ export default function About() {
                 <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
                     {content[language].stats.map((stat, index) => (
                         <div key={index} className="text-center">
-                            <div className="text-3xl md:text-4xl font-bold text-blue-600 mb-2">{stat.number}</div>
+                            <div className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent mb-2">{stat.number}</div>
                             <div className="text-gray-600 font-medium">{stat.label}</div>
                         </div>
                     ))}

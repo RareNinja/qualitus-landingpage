@@ -1,6 +1,7 @@
 "use client";
 
 import { useLanguage } from "@/contexts/LanguageContext";
+import Image from "next/image";
 
 export default function Team() {
     const { language } = useLanguage();
@@ -8,38 +9,38 @@ export default function Team() {
     const team = {
         pt: [
             {
-                name: "João Silva",
+                name: "Lays Nogueira",
                 position: "CEO - Chief Executive Officer",
-                photo: "/api/placeholder/400/400",
+                photo: "/assets/images/Lays.jpg",
                 quote: "Nossa missão é transformar a qualidade em um diferencial competitivo para nossos clientes. Acreditamos que a excelência não é um destino, mas uma jornada contínua de melhoria e inovação.",
-                linkedin: "#",
-                email: "joao.silva@qualitus.com.br",
+                linkedin: "https://www.linkedin.com/in/lays-nogueira/",
+                email: "lays.nogueira@qualitus.com.br",
             },
             {
-                name: "Maria Santos",
+                name: "Davi Balan",
                 position: "CTO - Chief Technology Officer",
-                photo: "/api/placeholder/400/400",
+                photo: "/assets/images/Davi.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "A tecnologia é o motor da inovação. Nossa abordagem combina soluções cutting-edge com metodologias comprovadas para entregar resultados excepcionais que impulsionam o crescimento dos nossos clientes.",
-                linkedin: "#",
-                email: "maria.santos@qualitus.com.br",
+                linkedin: "https://www.linkedin.com/in/davi-balan/",
+                email: "davi.balan@qualitus.com.br",
             },
         ],
         en: [
             {
-                name: "João Silva",
+                name: "Lays Nogueira",
                 position: "CEO - Chief Executive Officer",
-                photo: "/api/placeholder/400/400",
+                photo: "/assets/images/Lays.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "Our mission is to transform quality into a competitive advantage for our clients. We believe that excellence is not a destination, but a continuous journey of improvement and innovation.",
-                linkedin: "#",
-                email: "joao.silva@qualitus.com.br",
+                linkedin: "https://www.linkedin.com/in/lays-nogueira/",
+                email: "lays.nogueira@qualitus.com.br",
             },
             {
-                name: "Maria Santos",
+                name: "Davi Balan",
                 position: "CTO - Chief Technology Officer",
-                photo: "/api/placeholder/400/400",
+                photo: "/assets/images/Davi.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "Technology is the engine of innovation. Our approach combines cutting-edge solutions with proven methodologies to deliver exceptional results that drive our clients growth.",
-                linkedin: "#",
-                email: "maria.santos@qualitus.com.br",
+                linkedin: "https://www.linkedin.com/in/davi-balan/",
+                email: "davi.balan@qualitus.com.br",
             },
         ],
     };
@@ -68,18 +69,23 @@ export default function Team() {
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
                     {team[language].map((member, index) => (
-                        <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+                        <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 border border-gray-200">
                             <div className="relative">
-                                {/* Placeholder para foto */}
-                                <div className="h-80 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                                    <div className="text-center text-white">
-                                        <div className="text-6xl mb-4">👤</div>
-                                        <p className="text-lg font-medium">Foto do {member.name.split(" ")[0]}</p>
-                                    </div>
+                                {/* Foto do membro */}
+                                <div className="h-80 bg-gradient-to-br from-blue-500 via-purple-600 to-gray-800 flex items-center justify-center">
+                                    {member.photo ? (
+                                        <Image src={member.photo} alt={member.name} width={400} height={320} className="w-full h-full object-cover" />
+                                    ) : (
+                                        <div className="text-center text-white">
+                                            <div className="text-6xl mb-4">👤</div>
+                                            <p className="text-lg font-medium">Foto do {member.name.split(" ")[0]}</p>
+                                            <p className="text-sm opacity-75 mt-2">Adicione a imagem em /public/assets/images/</p>
+                                        </div>
+                                    )}
                                 </div>
 
                                 {/* Badge de cargo */}
-                                <div className="absolute top-4 right-4 bg-blue-600 text-white px-3 py-1 rounded-full text-sm font-medium">
+                                <div className="absolute top-4 right-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white px-3 py-1 rounded-full text-sm font-medium shadow-lg">
                                     {member.position.split(" - ")[0]}
                                 </div>
                             </div>
@@ -105,7 +111,7 @@ export default function Team() {
                                         <span className="mr-2">✉️</span>
                                         {language === "pt" ? "Email" : "Email"}
                                     </a>
-                                    <a href={member.linkedin} className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
+                                    <a href={member.linkedin} className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
                                         <span className="mr-2">💼</span>
                                         LinkedIn
                                     </a>
@@ -116,7 +122,7 @@ export default function Team() {
                 </div>
 
                 <div className="text-center mt-12">
-                    <button className="bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-blue-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-colors duration-300">
+                    <button className="bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
                         {language === "pt" ? "Conheça Toda a Equipe" : "Meet the Full Team"}
                     </button>
                 </div>

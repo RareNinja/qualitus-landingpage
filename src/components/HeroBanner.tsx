@@ -25,27 +25,23 @@ export default function HeroBanner() {
     };
 
     return (
-        <section id="home" className="relative bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white pt-20">
-            <div className="absolute inset-0 bg-black opacity-20"></div>
+        <section id="home" className="bg-gradient-primary text-white pt-20">
+            <div className="absolute inset-0 bg-gradient-to-r from-primary-900/20 to-secondary-900/20"></div>
             <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-32">
                 <div className="text-center">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6">{content[language].title}</h1>
-                    <h2 className="text-xl md:text-2xl font-light mb-8 text-blue-100">{content[language].subtitle}</h2>
-                    <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-blue-50 leading-relaxed">{content[language].description}</p>
+                    <h1 className="text-gradient text-4xl md:text-6xl font-bold mb-6">{content[language].title}</h1>
+                    <h2 className="text-xl md:text-2xl font-light mb-8 text-gray-300">{content[language].subtitle}</h2>
+                    <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-300 leading-relaxed">{content[language].description}</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300 transform hover:scale-105">
-                            {content[language].cta}
-                        </button>
-                        <button className="border-2 border-white text-white hover:bg-white hover:text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-300">
-                            {content[language].secondaryCta}
-                        </button>
+                        <button className="btn-gradient transform hover:scale-105">{content[language].cta}</button>
+                        <button className="btn-outline">{content[language].secondaryCta}</button>
                     </div>
                 </div>
             </div>
 
             {/* Decorative elements */}
             <div className="absolute bottom-0 left-0 right-0">
-                <svg className="w-full h-16 text-white" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <svg className="w-full h-16 text-gray-900" viewBox="0 0 1200 120" preserveAspectRatio="none">
                     <path
                         d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
                         opacity=".25"

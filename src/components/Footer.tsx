@@ -86,7 +86,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="bg-gray-900 text-white">
+        <footer className="bg-black text-white">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                     {/* Informações de Contato */}
@@ -107,7 +107,7 @@ export default function Footer() {
                             </div>
 
                             <div>
-                                <h4 className="font-semibold text-blue-400 mb-2">{content[language].contact.title}</h4>
+                                <h4 className="font-semibold text-purple-400 mb-2">{content[language].contact.title}</h4>
                                 <p className="text-gray-300">
                                     📞 {content[language].contact.phone}
                                     <br />
@@ -147,7 +147,7 @@ export default function Footer() {
                                         value={formData.email}
                                         onChange={handleInputChange}
                                         required
-                                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
+                                        className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white"
                                     />
                                 </div>
                             </div>
@@ -177,11 +177,14 @@ export default function Footer() {
                                     onChange={handleInputChange}
                                     rows={4}
                                     placeholder={content[language].form.placeholder}
-                                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white resize-none"
+                                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-purple-500 focus:border-transparent text-white resize-none"
                                 ></textarea>
                             </div>
 
-                            <button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 px-6 rounded-lg font-semibold transition-colors duration-300">
+                            <button
+                                type="submit"
+                                className="w-full bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white py-3 px-6 rounded-lg font-semibold transition-all duration-300 shadow-lg"
+                            >
                                 {content[language].form.submit}
                             </button>
                         </form>
@@ -193,13 +196,13 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">{content[language].copyright}</p>
                         <div className="flex space-x-4 mt-4 md:mt-0">
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 📘 Facebook
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
                                 📷 Instagram
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-white transition-colors">
+                            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 💼 LinkedIn
                             </a>
                         </div>
