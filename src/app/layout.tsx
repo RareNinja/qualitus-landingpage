@@ -2,7 +2,6 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
-import { FirebaseProvider } from "@/contexts/FirebaseContext";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -35,9 +34,7 @@ export default function RootLayout({
     return (
         <html lang="pt-BR">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <FirebaseProvider>
-                    <LanguageProvider>{children}</LanguageProvider>
-                </FirebaseProvider>
+                <LanguageProvider>{children}</LanguageProvider>
             </body>
         </html>
     );

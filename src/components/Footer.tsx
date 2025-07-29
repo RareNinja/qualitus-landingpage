@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
-import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
     const { language } = useLanguage();
@@ -110,9 +109,9 @@ export default function Footer() {
                             <div>
                                 <h4 className="font-semibold text-purple-400 mb-2">{content[language].contact.title}</h4>
                                 <p className="text-gray-300">
-                                    <FaPhone className="inline-block mr-2" /> {content[language].contact.phone}
+                                    <span className="inline-block mr-2">📞</span> {content[language].contact.phone}
                                     <br />
-                                    <FaEnvelope className="inline-block mr-2" /> {content[language].contact.email}
+                                    <span className="inline-block mr-2">✉️</span> {content[language].contact.email}
                                 </p>
                             </div>
                         </div>

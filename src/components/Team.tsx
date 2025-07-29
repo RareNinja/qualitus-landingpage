@@ -2,7 +2,6 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import Image from "next/image";
-import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export default function Team() {
     const { language } = useLanguage();
@@ -109,11 +108,11 @@ export default function Team() {
                                 {/* Contatos */}
                                 <div className="flex justify-center space-x-4">
                                     <a href={`mailto:${member.email}`} className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                                        <FaEnvelope className="inline-block mr-2" />
+                                        <span className="inline-block mr-2">📧</span>
                                         {language === "pt" ? "E-mail" : "Email"}
                                     </a>
                                     <a href={member.linkedin} className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
-                                        <FaLinkedin className="inline-block mr-2" />
+                                        <span className="inline-block mr-2">🔗</span>
                                         {language === "pt" ? "LinkedIn" : "LinkedIn"}
                                     </a>
                                 </div>
