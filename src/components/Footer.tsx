@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 export default function Footer() {
     const { language } = useLanguage();
@@ -109,9 +110,9 @@ export default function Footer() {
                             <div>
                                 <h4 className="font-semibold text-purple-400 mb-2">{content[language].contact.title}</h4>
                                 <p className="text-gray-300">
-                                    📞 {content[language].contact.phone}
+                                    <FaPhone className="inline-block mr-2" /> {content[language].contact.phone}
                                     <br />
-                                    ✉️ {content[language].contact.email}
+                                    <FaEnvelope className="inline-block mr-2" /> {content[language].contact.email}
                                 </p>
                             </div>
                         </div>
@@ -196,13 +197,13 @@ export default function Footer() {
                     <div className="flex flex-col md:flex-row justify-between items-center">
                         <p className="text-gray-400 text-sm">{content[language].copyright}</p>
                         <div className="flex space-x-4 mt-4 md:mt-0">
-                            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                            {/* <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 📘 Facebook
-                            </a>
-                            <a href="#" className="text-gray-400 hover:text-purple-400 transition-colors">
+                            </a> */}
+                            <a href="https://www.instagram.com/qualitup/" className="text-gray-400 hover:text-purple-400 transition-colors">
                                 📷 Instagram
                             </a>
-                            <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
+                            <a href="https://www.linkedin.com/company/qualitup/" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 💼 LinkedIn
                             </a>
                         </div>

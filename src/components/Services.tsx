@@ -95,11 +95,11 @@ export default function Services() {
                     ))}
                 </div>
 
-                <div className="text-center mt-12">
+                {/* <div className="text-center mt-12">
                     <button className="bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300 shadow-lg">
                         {language === "pt" ? "Ver Todos os Serviços" : "View All Services"}
                     </button>
-                </div>
+                </div> */}
             </div>
         </section>
     );

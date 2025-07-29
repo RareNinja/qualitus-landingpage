@@ -33,8 +33,10 @@ export default function HeroBanner() {
                     <h2 className="text-xl md:text-2xl font-light mb-8 text-gray-300">{content[language].subtitle}</h2>
                     <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto text-gray-300 leading-relaxed">{content[language].description}</p>
                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                        <button className="btn-gradient transform hover:scale-105">{content[language].cta}</button>
-                        <button className="btn-outline">{content[language].secondaryCta}</button>
+                        <button className="btn-gradient transform hover:scale-105" onClick={() => window.open("https://wa.me/554198166129", "_blank")}>
+                            {content[language].cta}
+                        </button>
+                        {/* <button className="btn-outline">{content[language].secondaryCta}</button> */}
                     </div>
                 </div>
             </div>

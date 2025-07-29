@@ -57,9 +57,16 @@ export default function Header() {
                     </nav>
 
                     {/* Seletor de Idioma */}
-                    <div className="flex items-center">
+                    <div className="flex items-center gap-2">
                         <button onClick={toggleLanguage} className="bg-gray-800 hover:bg-gray-700 px-3 py-2 rounded-md text-sm font-medium text-gray-300 transition-colors">
                             {language === "pt" ? "🇧🇷 PT" : "🇺🇸 EN"}
+                        </button>
+
+                        <button
+                            className="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-600"
+                            onClick={() => window.open("https://www.google.com", "_blank")}
+                        >
+                            {language === "pt" ? "Login" : "Login"}
                         </button>
                     </div>
                 </div>

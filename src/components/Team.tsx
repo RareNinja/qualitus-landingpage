@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/contexts/LanguageContext";
 import Image from "next/image";
+import { FaEnvelope, FaLinkedin } from "react-icons/fa";
 
 export default function Team() {
     const { language } = useLanguage();
@@ -108,12 +109,12 @@ export default function Team() {
                                 {/* Contatos */}
                                 <div className="flex justify-center space-x-4">
                                     <a href={`mailto:${member.email}`} className="flex items-center text-gray-600 hover:text-blue-600 transition-colors">
-                                        <span className="mr-2">✉️</span>
-                                        {language === "pt" ? "Email" : "Email"}
+                                        <FaEnvelope className="inline-block mr-2" />
+                                        {language === "pt" ? "E-mail" : "Email"}
                                     </a>
                                     <a href={member.linkedin} className="flex items-center text-gray-600 hover:text-purple-600 transition-colors">
-                                        <span className="mr-2">💼</span>
-                                        LinkedIn
+                                        <FaLinkedin className="inline-block mr-2" />
+                                        {language === "pt" ? "LinkedIn" : "LinkedIn"}
                                     </a>
                                 </div>
                             </div>
@@ -121,11 +122,11 @@ export default function Team() {
                     ))}
                 </div>
 
-                <div className="text-center mt-12">
+                {/* <div className="text-center mt-12">
                     <button className="bg-transparent border-2 border-blue-600 text-blue-600 hover:bg-gradient-to-r hover:from-blue-600 hover:to-purple-600 hover:text-white px-8 py-3 rounded-lg font-semibold transition-all duration-300">
                         {language === "pt" ? "Conheça Toda a Equipe" : "Meet the Full Team"}
                     </button>
-                </div>
+                </div> */}
             </div>
         </section>
     );
