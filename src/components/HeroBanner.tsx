@@ -7,7 +7,7 @@ export default function HeroBanner() {
 
     const content = {
         pt: {
-            title: "Qualitus",
+            title: "QualitUp",
             subtitle: "Excelência em Qualidade e Inovação",
             description:
                 "Transformamos ideias em soluções excepcionais. Nossa missão é entregar produtos e serviços que superam as expectativas e criam valor real para nossos clientes.",
@@ -15,7 +15,7 @@ export default function HeroBanner() {
             secondaryCta: "Saiba Mais",
         },
         en: {
-            title: "Qualitus",
+            title: "QualitUp",
             subtitle: "Excellence in Quality and Innovation",
             description:
                 "We transform ideas into exceptional solutions. Our mission is to deliver products and services that exceed expectations and create real value for our clients.",

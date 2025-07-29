@@ -10,7 +10,7 @@ export default function About() {
             title: "Sobre Nós",
             subtitle: "Nossa História e Missão",
             description:
-                "A Qualitus nasceu da paixão por excelência e inovação. Somos uma empresa comprometida em entregar soluções de qualidade que transformam negócios e criam valor real para nossos clientes.",
+                "A QualitUp nasceu da paixão por excelência e inovação. Somos uma empresa comprometida em entregar soluções de qualidade que transformam negócios e criam valor real para nossos clientes.",
             mission: "Nossa missão é ser referência em qualidade e inovação, oferecendo soluções excepcionais que superam as expectativas de nossos clientes.",
             vision: "Ser reconhecida como a empresa líder em transformação digital e consultoria de qualidade no Brasil.",
             values: [
@@ -42,7 +42,7 @@ export default function About() {
             title: "About Us",
             subtitle: "Our Story and Mission",
             description:
-                "Qualitus was born from a passion for excellence and innovation. We are a company committed to delivering quality solutions that transform businesses and create real value for our clients.",
+                "QualitUp was born from a passion for excellence and innovation. We are a company committed to delivering quality solutions that transform businesses and create real value for our clients.",
             mission: "Our mission is to be a reference in quality and innovation, offering exceptional solutions that exceed our clients expectations.",
             vision: "To be recognized as the leading company in digital transformation and quality consulting in Brazil.",
             values: [

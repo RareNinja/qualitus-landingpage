@@ -14,7 +14,7 @@ export default function Team() {
                 photo: "/assets/images/Lays.jpg",
                 quote: "Nossa missão é transformar a qualidade em um diferencial competitivo para nossos clientes. Acreditamos que a excelência não é um destino, mas uma jornada contínua de melhoria e inovação.",
                 linkedin: "https://www.linkedin.com/in/lays-nogueira/",
-                email: "lays.nogueira@qualitus.com.br",
+                email: "lays.nogueira@qualitup.com.br",
             },
             {
                 name: "Davi Balan",
@@ -22,7 +22,7 @@ export default function Team() {
                 photo: "/assets/images/Davi.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "A tecnologia é o motor da inovação. Nossa abordagem combina soluções cutting-edge com metodologias comprovadas para entregar resultados excepcionais que impulsionam o crescimento dos nossos clientes.",
                 linkedin: "https://www.linkedin.com/in/davi-balan/",
-                email: "davi.balan@qualitus.com.br",
+                email: "davi.balan@qualitup.com.br",
             },
         ],
         en: [
@@ -32,7 +32,7 @@ export default function Team() {
                 photo: "/assets/images/Lays.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "Our mission is to transform quality into a competitive advantage for our clients. We believe that excellence is not a destination, but a continuous journey of improvement and innovation.",
                 linkedin: "https://www.linkedin.com/in/lays-nogueira/",
-                email: "lays.nogueira@qualitus.com.br",
+                email: "lays.nogueira@qualitup.com.br",
             },
             {
                 name: "Davi Balan",
@@ -40,7 +40,7 @@ export default function Team() {
                 photo: "/assets/images/Davi.jpg", // Temporariamente vazio até a imagem ser adicionada
                 quote: "Technology is the engine of innovation. Our approach combines cutting-edge solutions with proven methodologies to deliver exceptional results that drive our clients growth.",
                 linkedin: "https://www.linkedin.com/in/davi-balan/",
-                email: "davi.balan@qualitus.com.br",
+                email: "davi.balan@qualitup.com.br",
             },
         ],
     };
@@ -48,13 +48,13 @@ export default function Team() {
     const content = {
         pt: {
             title: "Nossa Liderança",
-            subtitle: "Conheça quem está à frente da Qualitus",
-            description: "Nossa equipe executiva combina experiência sólida com visão inovadora para conduzir a Qualitus rumo ao futuro da qualidade e tecnologia.",
+            subtitle: "Conheça quem está à frente da QualitUp",
+            description: "Nossa equipe executiva combina experiência sólida com visão inovadora para conduzir a QualitUp rumo ao futuro da qualidade e tecnologia.",
         },
         en: {
             title: "Our Leadership",
-            subtitle: "Meet the people leading Qualitus",
-            description: "Our executive team combines solid experience with innovative vision to lead Qualitus toward the future of quality and technology.",
+            subtitle: "Meet the people leading QualitUp",
+            description: "Our executive team combines solid experience with innovative vision to lead QualitUp toward the future of quality and technology.",
         },
     };
 

@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { LanguageProvider } from "@/contexts/LanguageContext";
+import { FirebaseProvider } from "@/contexts/FirebaseContext";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -14,11 +15,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "Qualitus - Excelência em Qualidade e Inovação",
+    title: "QualitUp - Excelência em Qualidade e Inovação",
     description:
         "Transformamos ideias em soluções excepcionais. Nossa missão é entregar produtos e serviços que superam as expectativas e criam valor real para nossos clientes.",
     keywords: "qualidade, inovação, consultoria, gestão de projetos, tecnologia",
-    authors: [{ name: "Qualitus" }],
+    authors: [{ name: "QualitUp" }],
 };
 
 export const viewport: Viewport = {
@@ -34,7 +35,9 @@ export default function RootLayout({
     return (
         <html lang="pt-BR">
             <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-                <LanguageProvider>{children}</LanguageProvider>
+                <FirebaseProvider>
+                    <LanguageProvider>{children}</LanguageProvider>
+                </FirebaseProvider>
             </body>
         </html>
     );

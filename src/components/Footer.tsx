@@ -19,14 +19,14 @@ export default function Footer() {
             description: "Entre em contato conosco para saber mais sobre nossos serviços ou para solicitar um orçamento personalizado.",
             address: {
                 title: "Endereço",
-                street: "Rua das Flores, 123",
-                city: "São Paulo, SP",
-                zip: "01234-567",
+                street: "....",
+                city: "...",
+                zip: "...",
             },
             contact: {
                 title: "Contato",
-                phone: "+55 (11) 99999-9999",
-                email: "contato@qualitus.com.br",
+                phone: "+55 41 9816-6129",
+                email: "contato@qualitup.com.br",
             },
             form: {
                 title: "Envie seu Interesse",
@@ -38,7 +38,7 @@ export default function Footer() {
                 placeholder: "Digite sua mensagem aqui...",
             },
             social: "Siga-nos nas redes sociais",
-            copyright: "© 2024 Qualitus. Todos os direitos reservados.",
+            copyright: "© 2025 QualitUp. Todos os direitos reservados.",
         },
         en: {
             title: "Get in Touch",
@@ -46,14 +46,14 @@ export default function Footer() {
             description: "Contact us to learn more about our services or to request a personalized quote.",
             address: {
                 title: "Address",
-                street: "Rua das Flores, 123",
-                city: "São Paulo, SP",
-                zip: "01234-567",
+                street: "....",
+                city: "...",
+                zip: "...",
             },
             contact: {
                 title: "Contact",
-                phone: "+55 (11) 99999-9999",
-                email: "contact@qualitus.com.br",
+                phone: "+55 41 9816-6129",
+                email: "contact@qualitup.com.br",
             },
             form: {
                 title: "Send Your Interest",
@@ -65,7 +65,7 @@ export default function Footer() {
                 placeholder: "Type your message here...",
             },
             social: "Follow us on social media",
-            copyright: "© 2024 Qualitus. All rights reserved.",
+            copyright: "© 2025 QualitUp. All rights reserved.",
         },
     };
 
@@ -95,7 +95,7 @@ export default function Footer() {
                         <p className="text-gray-300 mb-8 leading-relaxed">{content[language].description}</p>
 
                         <div className="space-y-6">
-                            <div>
+                            {/* <div>
                                 <h4 className="font-semibold text-blue-400 mb-2">{content[language].address.title}</h4>
                                 <p className="text-gray-300">
                                     {content[language].address.street}
@@ -104,7 +104,7 @@ export default function Footer() {
                                     <br />
                                     {content[language].address.zip}
                                 </p>
-                            </div>
+                            </div> */}
 
                             <div>
                                 <h4 className="font-semibold text-purple-400 mb-2">{content[language].contact.title}</h4>
