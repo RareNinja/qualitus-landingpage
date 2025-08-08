@@ -26,7 +26,7 @@ export default function Footer() {
             contact: {
                 title: "Contato",
                 phone: "+55 41 9816-6129",
-                email: "contato@qualitup.com.br",
+                email: "comercial@qualittus.com",
             },
             form: {
                 title: "Envie seu Interesse",
@@ -38,7 +38,7 @@ export default function Footer() {
                 placeholder: "Digite sua mensagem aqui...",
             },
             social: "Siga-nos nas redes sociais",
-            copyright: "© 2025 QualitUp. Todos os direitos reservados.",
+            copyright: "© 2025 Qualittus. Todos os direitos reservados.",
         },
         en: {
             title: "Get in Touch",
@@ -53,7 +53,7 @@ export default function Footer() {
             contact: {
                 title: "Contact",
                 phone: "+55 41 9816-6129",
-                email: "contact@qualitup.com.br",
+                email: "comercial@qualittus.com",
             },
             form: {
                 title: "Send Your Interest",
@@ -65,7 +65,7 @@ export default function Footer() {
                 placeholder: "Type your message here...",
             },
             social: "Follow us on social media",
-            copyright: "© 2025 QualitUp. All rights reserved.",
+            copyright: "© 2025 Qualittus. All rights reserved.",
         },
     };
 
@@ -199,10 +199,10 @@ export default function Footer() {
                             {/* <a href="#" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 📘 Facebook
                             </a> */}
-                            <a href="https://www.instagram.com/qualitup/" className="text-gray-400 hover:text-purple-400 transition-colors">
+                            <a href="https://www.instagram.com/qualittus/" className="text-gray-400 hover:text-purple-400 transition-colors">
                                 📷 Instagram
                             </a>
-                            <a href="https://www.linkedin.com/company/qualitup/" className="text-gray-400 hover:text-blue-400 transition-colors">
+                            <a href="https://www.linkedin.com/company/qualittus/" className="text-gray-400 hover:text-blue-400 transition-colors">
                                 💼 LinkedIn
                             </a>
                         </div>

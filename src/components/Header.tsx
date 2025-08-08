@@ -36,7 +36,7 @@ export default function Header() {
                             </div>
                         </div>
                         <div className="ml-3">
-                            <h1 className="text-xl font-bold text-white">QualitUp</h1>
+                            <h1 className="text-xl font-bold text-white">Qualittus</h1>
                         </div>
                     </div>
 

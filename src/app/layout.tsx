@@ -14,11 +14,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-    title: "QualitUp - Excelência em Qualidade e Inovação",
+    title: "Qualittus - Excelência em Qualidade e Inovação",
     description:
         "Transformamos ideias em soluções excepcionais. Nossa missão é entregar produtos e serviços que superam as expectativas e criam valor real para nossos clientes.",
     keywords: "qualidade, inovação, consultoria, gestão de projetos, tecnologia",
-    authors: [{ name: "QualitUp" }],
+    authors: [{ name: "Qualittus" }],
 };
 
 export const viewport: Viewport = {
