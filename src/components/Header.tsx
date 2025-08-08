@@ -9,13 +9,13 @@ export default function Header() {
         pt: {
             home: "Home",
             services: "Serviços",
-            properties: "Propriedades",
+            properties: "Liderança",
             about: "Sobre Nós",
         },
         en: {
             home: "Home",
             services: "Services",
-            properties: "Properties",
+            properties: "Leadership",
             about: "About Us",
         },
     };
