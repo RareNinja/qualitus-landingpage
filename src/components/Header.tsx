@@ -64,7 +64,7 @@ export default function Header() {
 
                         <button
                             className="text-gray-300 hover:text-blue-400 px-3 py-2 rounded-md text-sm font-medium transition-colors bg-gradient-to-r from-blue-500 to-purple-600"
-                            onClick={() => window.open("https://www.google.com", "_blank")}
+                            onClick={() => window.open("https://app.qualittus.com", "_blank")}
                         >
                             {language === "pt" ? "Login" : "Login"}
                         </button>
